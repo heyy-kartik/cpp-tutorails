@@ -3,8 +3,24 @@ using namespace std;
 int main()
 {
     int n;
-    cout << " Enter the Number ";
+    cout << "How many Terms in Series :";
     cin >> n;
+
     int a = 0;
     int b = 1;
+
+    if (n >= 1)
+        cout << a << " ";
+    if (n >= 2)
+        cout << b << " ";
+
+    for (int i = 2; i < n; i++)
+    {
+        int ans = a + b;
+        cout << ans << " ";
+        a = b;
+        b = ans;
+    }
+
+    return 0;
 }

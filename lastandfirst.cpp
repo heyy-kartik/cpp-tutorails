@@ -57,10 +57,10 @@ int main()
 {
     int arr[7] = {2, 3, 3, 5, 7, 8, 9};
 
-    sort(arr, arr + 7); // Binary search needs sorted array
+    // Binary search needs sorted array
 
-    cout << "Index of the first occurrence of : " << firstOccu(arr, 7, 3) << endl;
-    cout << "Index of the last  occurrence of: " << lastOcuurence(arr, 7, 3) << endl;
+    cout << "Index of the first occurrence of 3 : " << firstOccu(arr, 7, 3) << endl;
+    cout << "Index of the last  occurrence of 3 : " << lastOcuurence(arr, 7, 3) << endl;
 
     return 0;
 }
