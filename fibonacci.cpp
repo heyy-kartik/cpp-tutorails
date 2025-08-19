@@ -6,8 +6,7 @@ int main()
     cout << "How many Terms in Series :";
     cin >> n;
 
-    int a = 0;
-    int b = 1;
+    int a = 0, b = 1;
 
     if (n >= 1)
         cout << a << " ";
