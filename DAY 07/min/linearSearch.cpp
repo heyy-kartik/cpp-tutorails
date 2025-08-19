@@ -25,7 +25,7 @@ int main()
     bool found = search(arr, 10, key);
     if (found)
     {
-        cout << " Key is present " << endl;
+        cout << " Key is present  at " << key << endl;
     }
     else
     {
