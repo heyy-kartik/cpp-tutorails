@@ -3,8 +3,8 @@ using namespace std;
 
 int getMax(int num[], int n)
 {
-    int max = INT16_MIN;
-    for (int i = 0; i < n; i++)
+    int max = INT32_MAX;
+    for (int i = 0; i < n - 1; i++)
     {
         if (num[i] > max)
         {
@@ -16,12 +16,12 @@ int getMax(int num[], int n)
 
 int getMin(int num[], int n)
 {
-    int min = INT16_MAX;
-    for (int i = 0; i < n; i++)
+    int min = INT32_MAX;
+    for (int j = 0; j < n - 1; j++)
     {
-        if (num[i] > min)
+        if (num[j] < min)
         {
-            min = num[i];
+            min = num[j];
         }
     }
     return min;
@@ -36,4 +36,6 @@ int main()
     {
         cin >> num[i];
     }
+    cout << "Maximum Numbers in the Array is " << getMax(num, size) << endl;
+    cout << "Minimum Numbers in the Array is " << getMin(num, size) << endl;
 }
