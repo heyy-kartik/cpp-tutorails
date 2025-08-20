@@ -22,7 +22,7 @@ int peakElement(int arr[], int n)
 int main()
 {
     int array[5] = {0, 1, 5, 3, 2};
-    cout << "Peak Element is : " << peakElement(array, 5) << endl;
+    cout << "Peak Element Of Index is : " << peakElement(array, 5) << endl;
 
     return 0;
 }
