@@ -16,7 +16,7 @@ void reverse(int array[], int n) // Fixed: array[] indicates array parameter
 void printArray(int array[], int n)
 {
 
-    for (int i = 0; i < n; i++) // Fixed: i < n instead of i <= n
+    for (int i = 0; i < n; i++) //
     {
         cout << array[i] << " ";
     }
